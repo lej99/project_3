@@ -12,9 +12,6 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
-    <!-- 슬라이드 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -129,23 +126,42 @@
         </nav>
     </header>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <div id="slider">
         <div class="slider_control">
             <img src="css/img/slide_logo.png" alt="슬라이드로고">
-            <!-- <button class="slide_1 button">o</button>
-            <button class="slide_2 button">o</button> -->
-            <button class="slide_pagination button">o</button>
-            <button class="slide_prev button">&lt;</button>
-            <button class="slide_next button">&gt;</button>
+            <div class="pagination swiper-pagination"></div>
         </div>
-        <div class="slider_wrap">
-            <div class="slider_full">
-                <div class="slider_img"><img src="css/img/slide01.png" alt="슬라이드1"></div>
-                <div class="slider_img"><img src="css/img/slide02.png" alt="슬라이드2"></div>
-                <div class="slider_img"><img src="css/img/slide03.png" alt="슬라이드3"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="css/img/slide01.png" alt="슬라이드1"></div>
+                <div class="swiper-slide"><img src="css/img/slide02.png" alt="슬라이드2"></div>
+                <div class="swiper-slide"><img src="css/img/slide03.png" alt="슬라이드3"></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
+        
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 
     <div id="floor_slider"></div>
 
