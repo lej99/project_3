@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
@@ -107,17 +109,20 @@
         </nav>
     </header>
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <div id="slider">
-        <div class="slider_control">
-            <img src="css/img/slide_logo.png" alt="슬라이드로고">
-            <div class="pagination swiper-pagination"></div>
+    <div class="slider_control" id="slider_control">
+        <img src="css/img/slide_logo.png" alt="슬라이드로고">
+        <div class="pagination swiper-pagination"></div>
+        <div class="scroll_arrow">
+            <p>SCROLL</p>
+            <img src="css/img/btn_scroll.png" alt="btn scroll">
         </div>
+    </div>
+
+    <div id="slider">    
         <div id="side_menu">
             <div class="side_door">
-                <p><i class="fa-solid fa-chevron-left"></i></p>
-                <p class="close">Close</p>
+                <p class="open"><i class="fa-solid fa-chevron-left"></i></p>
+                <p class="close off">Close</p>
             </div>
             <div class="side_cont">
                 <ul class="side_list">
@@ -161,20 +166,22 @@
                 </ul>
             </div>
         </div>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="css/img/slide01.png" alt="슬라이드1"></div>
-                <div class="swiper-slide"><img src="css/img/slide02.png" alt="슬라이드2"></div>
-                <div class="swiper-slide"><img src="css/img/slide03.png" alt="슬라이드3"></div>
-            </div>
-            <div class="swiper-button-prev">
-                <div class="back"></div>
-            </div>
-            <div class="swiper-button-next">
-                <div class="back"></div>
-            </div>
-        </div>
+    </div>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <div class="swiper mySwiper" id="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="css/img/slide01.png" alt="슬라이드1"></div>
+            <div class="swiper-slide"><img src="css/img/slide02.png" alt="슬라이드2"></div>
+            <div class="swiper-slide"><img src="css/img/slide03.png" alt="슬라이드3"></div>
+        </div>
+        <div class="swiper-button-prev">
+            <div class="back"></div>
+        </div>
+        <div class="swiper-button-next">
+            <div class="back"></div>
+        </div>
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
