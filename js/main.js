@@ -17,12 +17,5 @@ $(document).ready(function () {
             $('#side_menu').stop().animate({ marginRight: -400 }, 400);
         }
     });
-
-    if ($('.swiper-slide').hasClass('swiper-slide-active')) {
-        $('.swiper-slide.swiper-slide-active .sli_tit').delay(1000).animate({ marginTop: -150 }, 800, "swing");
-        $('.swiper-slide.swiper-slide-active .sli_stit').delay(1500).animate({ marginTop: -150 }, 800, "swing");
-        $('.swiper-slide.swiper-slide-active .sli_desc').delay(2000).animate({ marginTop: -150 }, 800, "swing");
-        $('.swiper-slide.swiper-slide-active .btn_box').delay(2500).animate({ marginTop: -150 }, 800, "swing");
-    }
-
+    
 });
