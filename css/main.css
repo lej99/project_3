@@ -3,7 +3,7 @@
 header {
     width: 100%;
     height: 180px;
-    background-color: aqua;
+    transition: all 0.5s;
 }
 
 header #add {
@@ -90,10 +90,10 @@ header nav .top_menu li > ul {
     position: absolute;
     text-align: center;
     width: 200px;
-    top: 130px;
+    top: 100px;
     left: 50%;
     transform: translate(-50%, 0);
-    padding: 15px 0;
+    padding: 30px 0 20px 0;
     background-color: #fff;
     display: none;
     z-index: 5;
@@ -111,6 +111,16 @@ header nav .icon {
     width: 25px;
     height: 25px;
     font-size: 1.5rem;
+}
+
+header.active{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+header.active nav{
+    height: 100px;
 }
 
 #slider_control {
@@ -202,8 +212,7 @@ header nav .icon {
 #slider {
     width: 100%;
     height: 750px;
-    position: absolute;
-    top: 180px;
+    position: relative;
     overflow: hidden;
 }
 
@@ -213,8 +222,8 @@ header nav .icon {
     height: 750px;
     top: 0;
     left: auto;
-    right: 0;
-    margin-right: -400px;
+    right: -400px;
+    /* margin-right: -400px; */
     display: flex;
     background-color: #333;
     color: #fff;
@@ -242,6 +251,38 @@ header nav .icon {
 
 .off {
     display: none;
+}
+
+#slider #side_menu.scroll {
+    height: 100vh;
+    position: fixed;
+    top: 150px;
+    left: auto;
+    right: 0px;
+    z-index: 999;
+}
+
+#scr_btn {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border-radius: 50%;
+    position: fixed;
+    top: auto;
+    bottom: 100px;
+    left: auto;
+    right: 50px;
+    z-index: 998;
+    display: none;
+}
+
+#scr_btn .fa-solid {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #slider #side_menu .side_door .close::after {
@@ -330,7 +371,7 @@ header nav .icon {
     position: absolute;
     top: 180px;
     left: auto;
-    right: 50px;
+    right: 0;
     width: 85%;
     height: 750px;
     z-index: 4 !important;
@@ -341,10 +382,6 @@ header nav .icon {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.active {
-    opacity: 1;
 }
 
 #swiper .swiper-slide .main_sli {
@@ -395,7 +432,6 @@ header nav .icon {
     top: 50%;
     margin-top: -4px;
     left: 0;
-    transition: all 0.5s;
 }
 
 #swiper .swiper-slide .btn_box {

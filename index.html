@@ -126,6 +126,9 @@
     </div>
 
     <div id="slider">
+        <div id="scr_btn">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
         <div id="side_menu">
             <div class="side_door">
                 <p class="open"><i class="fa-solid fa-chevron-left"></i></p>
@@ -184,9 +187,9 @@
                 <div class="main_sli slide01" data-swiper-slide-index="0">
                     <p class="sli_tit"></p>
                     <p class="sli_stit"></p>
-                    <p class="sli_desc">
+                    <!-- <p class="sli_desc">
                         <br>
-                    </p>
+                    </p> -->
                     <div class="btn_box">
                         <a href="#" class="btn_go"><span>뉴즈 바로가기</span></a>
                     </div>
@@ -197,9 +200,9 @@
                 <div class="main_sli slide02" data-swiper-slide-index="1">
                     <p class="sli_tit"></p>
                     <p class="sli_stit"></p>
-                    <p class="sli_desc">
+                    <!-- <p class="sli_desc">
                         <br>
-                    </p>
+                    </p> -->
                     <div class="btn_box">
                         <a href="#" class="btn_go"><span>더내추럴 바로가기</span></a>
                     </div>
@@ -266,8 +269,14 @@
                 slideChange: function () {
                     const {activeIndex, slides} = this;
                     console.log(activeIndex, slides);
+                    $('.sli_tit').finish().removeAttr('style');
+                    $('.sli_stit').finish().removeAttr('style');
+                    $('.sli_desc').finish().removeAttr('style');
                     $('.btn_box').finish().removeAttr('style');
-                    $(slides[activeIndex]).find('.btn_box').css({ marginTop: 50, opacity: 1 });
+                    $(slides[activeIndex]).find('.sli_tit').animate({opacity: 1 });
+                    $(slides[activeIndex]).find('.sli_stit').delay(100).animate({ marginTop: -10, opacity: 1 });
+                    $(slides[activeIndex]).find('.sli_desc').delay(500).animate({ marginTop: -10, opacity: 1 });
+                    $(slides[activeIndex]).find('.btn_box').delay(700).animate({ marginTop: 80, opacity: 1 });
                 }
             }
         });
