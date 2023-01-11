@@ -1,128 +1,6 @@
 @charset "utf-8";
 
-header {
-    width: 100%;
-    height: 180px;
-    transition: all 0.5s;
-}
-
-header #add {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
-}
-
-header #add button {
-    font-size: 1.5rem;
-    padding: 0 20px;
-    color: #fff;
-}
-
-header #add .add_wrap {
-    width: 500px;
-    height: 50px;
-    text-align: center;
-}
-
-header #add .add_wrap .add_text {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-header #add .add_wrap .add_text li {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-header #add .add_wrap .add_text li:not(:first-child) {
-    display: none;
-}
-
-header #add a {
-    line-height: 50px;
-    color: #fff;
-}
-
-header nav {
-    background-color: #fff;
-    width: 100%;
-    height: 130px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-header nav .logo {
-    width: 20%;
-}
-
-header nav a {
-    color: #333;
-}
-
-.point::after {
-    content: ' \2039';
-    font-size: 1rem;
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-}
-header nav .top_menu,
-.top_search {
-    width: 25%;
-    display: flex;
-    justify-content: space-around;
-}
-
-header nav .top_menu li {
-    padding: 57px 0;
-    position: relative;
-}
-
-header nav .top_menu li > ul {
-    position: absolute;
-    text-align: center;
-    width: 200px;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 30px 0 20px 0;
-    background-color: #fff;
-    display: none;
-    z-index: 5;
-}
-
-header nav .top_menu li > ul > li {
-    padding: 5px 0;
-}
-
-header nav .top_search li:nth-child(1) {
-    border-bottom: 1px solid #333;
-}
-
-header nav .icon {
-    width: 25px;
-    height: 25px;
-    font-size: 1.5rem;
-}
-
-header.active{
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
-
-header.active nav{
-    height: 100px;
-}
-
+/* 슬라이드 1 */
 #slider_control {
     position: absolute;
     top: 50px;
@@ -223,7 +101,6 @@ header.active nav{
     top: 0;
     left: auto;
     right: -400px;
-    /* margin-right: -400px; */
     display: flex;
     background-color: #333;
     color: #fff;

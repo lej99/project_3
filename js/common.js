@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // 광고슬라이드
+    // add슬라이드
     let i = 0;
     function addSlide(){
         i++;
@@ -12,7 +12,7 @@ $(document).ready(function(){
     };
     setInterval(addSlide,5000);
 
-    // 메뉴
+    // 헤더 메뉴
     $('.top_menu > li').hover(function(){
         $(this).children('ul').show();
     }, function(){
@@ -23,5 +23,14 @@ $(document).ready(function(){
         $(this).find('a').wrap('<b class="point" />');
     }, function(){
         $(this).find('a').unwrap();
+    });
+
+    // 스크롤 이벤트 헤더
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('header').addClass('active');
+        } else {
+            $('header').removeClass('active');
+        }
     });
 });
