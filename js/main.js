@@ -14,9 +14,11 @@ $(document).ready(function () {
             $('#scr_btn').stop().fadeIn();
             $('.close').addClass('off');
             $('.open').removeClass('off');
+            $('#swiper .swiper-slide img').stop().animate({'height':'103%','width':'103%'});
             $('#side_menu').addClass('scroll').stop().animate({ right: -450 }, 400);
         } else {
             $('#scr_btn').stop().fadeOut();
+            $('#swiper .swiper-slide img').stop().animate({'height':'100%','width':'100%'});
             $('#side_menu').removeClass('scroll').stop().animate({ right: -400 }, 400);
         }
     });

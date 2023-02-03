@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 ul,
 ol,
 li {
@@ -40,7 +44,7 @@ header #add {
     height: 50px;
     display: flex;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #000;
 }
 
 header #add button {
@@ -93,7 +97,7 @@ header nav .logo {
 }
 
 header nav a {
-    color: #333;
+    color: #000;
 }
 
 .point::after {
@@ -133,7 +137,7 @@ header nav .top_menu li > ul > li {
 }
 
 header nav .top_search li:nth-child(1) {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #000;
 }
 
 header nav .icon {
@@ -143,11 +147,39 @@ header nav .icon {
 }
 
 header.active{
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 999;
 }
 
 header.active nav{
     height: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 200px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav .list_cate,
+footer nav .list_cs {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav ul a {
+    line-height: 50px;
 }

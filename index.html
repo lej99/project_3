@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>misoolgwan</title>
-    <!-- <link rel="shortcut icon" href="css/img/list-keroppi.png"> -->
+    <title>두성종이</title>
+    <link rel="shortcut icon" href="css/img/logo.png">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/floor_slider.css">
     <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/cb463ae356.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
@@ -176,82 +179,71 @@
                 </ul>
             </div>
         </div>
-    </div>
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <div class="swiper mySwiper" id="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="css/img/slide01.png" alt="슬라이드1">
-                <div class="main_sli slide01" data-swiper-slide-index="0">
-                    <p class="sli_tit"></p>
-                    <p class="sli_stit"></p>
-                    <!-- <p class="sli_desc">
-                        <br>
-                    </p> -->
-                    <div class="btn_box">
-                        <a href="#" class="btn_go"><span>뉴즈 바로가기</span></a>
+        <div class="swiper mySwiper" id="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="css/img/slide01.png" alt="슬라이드1">
+                    <div class="main_sli slide01" data-swiper-slide-index="0">
+                        <p class="sli_tit"></p>
+                        <p class="sli_stit"></p>
+                        <div class="btn_box">
+                            <a href="#" class="btn_go"><span>뉴즈 바로가기</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="css/img/slide02.png" alt="슬라이드2">
+                    <div class="main_sli slide02" data-swiper-slide-index="1">
+                        <p class="sli_tit"></p>
+                        <p class="sli_stit"></p>
+                        <div class="btn_box">
+                            <a href="#" class="btn_go"><span>더내추럴 바로가기</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="css/img/slide03.png" alt="슬라이드3">
+                    <div class="main_sli slide03" data-swiper-slide-index="2">
+                        <p class="sli_tit">
+                            <span>M</span>
+                            <span>A</span>
+                            <span>K</span>
+                            <span>E</span>
+                            <span class="txt_mg"></span>
+                            <span>A</span>
+                            <span class="txt_mg"></span>
+                            <span>R</span>
+                            <span>E</span>
+                            <span>S</span>
+                            <span>E</span>
+                            <span>R</span>
+                            <span>V</span>
+                            <span>A</span>
+                            <span>T</span>
+                            <span>I</span>
+                            <span>O</span>
+                            <span>N</span>
+                        </p>
+                        <p class="sli_stit">06635 서울특별시 서초구 사임당로23길 41</p>
+                        <p class="sli_desc">
+                            240여가지 상품과 다양한 컨셉의 제작물, 고객 맞춤형 상담 서비스로 통합 페이퍼 솔루션을 경험해보세요.<br>
+                            (※ 두성종이 서초 본사 쇼룸은 예약제로 운영되오니 참고 바랍니다.)
+                        </p>
+                        <div class="btn_box">
+                            <a href="#" class="btn_go"><span>예약하기</span></a>
+                            <a href="#" class="btn_go"><span>두성종이 서초 안내</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <img src="css/img/slide02.png" alt="슬라이드2">
-                <div class="main_sli slide02" data-swiper-slide-index="1">
-                    <p class="sli_tit"></p>
-                    <p class="sli_stit"></p>
-                    <!-- <p class="sli_desc">
-                        <br>
-                    </p> -->
-                    <div class="btn_box">
-                        <a href="#" class="btn_go"><span>더내추럴 바로가기</span></a>
-                    </div>
-                </div>
+            <div class="swiper-button-prev">
+                <div class="back"></div>
             </div>
-            <div class="swiper-slide">
-                <img src="css/img/slide03.png" alt="슬라이드3">
-                <div class="main_sli slide03" data-swiper-slide-index="2">
-                    <p class="sli_tit">
-                        <span>M</span>
-                        <span>A</span>
-                        <span>K</span>
-                        <span>E</span>
-                        <span class="txt_mg"></span>
-                        <span>A</span>
-                        <span class="txt_mg"></span>
-                        <span>R</span>
-                        <span>E</span>
-                        <span>S</span>
-                        <span>E</span>
-                        <span>R</span>
-                        <span>V</span>
-                        <span>A</span>
-                        <span>T</span>
-                        <span>I</span>
-                        <span>O</span>
-                        <span>N</span>
-                    </p>
-                    <p class="sli_stit">06635 서울특별시 서초구 사임당로23길 41</p>
-                    <p class="sli_desc">
-                        240여가지 상품과 다양한 컨셉의 제작물, 고객 맞춤형 상담 서비스로 통합 페이퍼 솔루션을 경험해보세요.<br>
-                        (※ 두성종이 서초 본사 쇼룸은 예약제로 운영되오니 참고 바랍니다.)
-                    </p>
-                    <div class="btn_box">
-                        <a href="#" class="btn_go"><span>예약하기</span></a>
-                        <a href="#" class="btn_go"><span>두성종이 서초 안내</span></a>
-                    </div>
-                </div>
+            <div class="swiper-button-next">
+                <div class="back"></div>
             </div>
-        </div>
-        <div class="swiper-button-prev">
-            <div class="back"></div>
-        </div>
-        <div class="swiper-button-next">
-            <div class="back"></div>
         </div>
     </div>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -267,16 +259,13 @@
             },
             on: {
                 slideChange: function () {
-                    const {activeIndex, slides} = this;
+                    const { activeIndex, slides } = this;
                     console.log(activeIndex, slides);
-                    $('.sli_tit').finish().removeAttr('style');
-                    $('.sli_stit').finish().removeAttr('style');
-                    $('.sli_desc').finish().removeAttr('style');
-                    $('.btn_box').finish().removeAttr('style');
-                    $(slides[activeIndex]).find('.sli_tit').animate({opacity: 1 });
+                    $('.sli_tit, .sli_stit, .sli_desc, .btn_box').finish().removeAttr('style');
+                    $(slides[activeIndex]).find('.sli_tit').animate({ opacity: 1 });
                     $(slides[activeIndex]).find('.sli_stit').delay(100).animate({ marginTop: -10, opacity: 1 });
                     $(slides[activeIndex]).find('.sli_desc').delay(500).animate({ marginTop: -10, opacity: 1 });
-                    $(slides[activeIndex]).find('.btn_box').delay(700).animate({ marginTop: 80, opacity: 1 });
+                    $(slides[activeIndex]).find('.btn_box').delay(700).animate({ marginTop: 100, opacity: 1 });
                 }
             }
         });
@@ -302,7 +291,22 @@
 
     <div id="notice"></div>
 
-    <footer></footer>
+    <footer>
+        <nav>
+            <ul class="list_cate">
+                <li><a href="#">SPACE</a></li>
+                <li><a href="#">PAPER</a></li>
+                <li><a href="#">CONTENTS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+            <ul class="list_cs">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">1:1문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
