@@ -33,4 +33,16 @@ $(document).ready(function(){
             $('header').removeClass('active');
         }
     });
+
+    // 푸터 패밀리사이트 버튼
+    $('.fam_box ul').hide();
+    $('.fam_btn').click(function () {
+        $(this).toggleClass('click');
+        $('.fam_box ul').stop().slideToggle();
+    });
+
+    // 푸터 top 버튼
+    $('.top_btn').click(function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });

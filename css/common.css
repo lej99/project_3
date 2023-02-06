@@ -1,10 +1,26 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Heebo';
+    src: url('font/Heebo-VariableFont_wght.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/NotoSansKR-Regular.otf') format('opentype'),
+        url('font/NotoSansKR-Thin.otf') format('opentype'),
+        url('font/NotoSansKR-Medium.otf') format('opentype'),
+        url('font/NotoSansKR-Light.otf') format('opentype'),
+        url('font/NotoSansKR-Bold.otf') format('opentype'),
+        url('font/NotoSansKR-Black.otf') format('opentype'); /* Mac */
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Heebo', 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -79,6 +95,7 @@ header #add .add_wrap .add_text li:not(:first-child) {
 
 header #add a {
     line-height: 50px;
+    font-size: 0.8rem;
     color: #fff;
 }
 
@@ -162,6 +179,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 50px 200px;
+    position: relative;
 }
 
 footer a {
@@ -182,4 +200,163 @@ footer nav .list_cs {
 
 footer nav ul a {
     line-height: 50px;
+}
+
+footer .logo {
+    padding: 6% 2%;
+}
+
+footer .foot_box {
+    padding: 0% 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .foot_box .foot_left {
+    width: 50%;
+}
+
+footer .foot_box .foot_right {
+    width: 45%;
+}
+
+footer .foot_box .foot_left dl {
+    margin-bottom: 2%;
+}
+
+footer .foot_box .foot_left dl dt {
+    font-size: 1.1rem;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .foot_box .foot_left dl dd {
+    font-size: 0.85rem;
+    display: inline-block;
+    vertical-align: top;
+    color: #999;
+}
+
+footer .foot_box .foot_right .foot_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+footer .foot_box .foot_right .fam_box {
+    font-family: 'Noto Sans KR';
+    width: 70%;
+    margin: 4% 0% 6% 0%;
+    background-color: #222;
+    position: relative;
+}
+
+footer .foot_box .foot_right .fam_box .fam_btn {
+    padding: 5% 6%;
+    position: relative;
+    cursor: pointer;
+}
+
+footer .foot_box .foot_right .fam_box .fam_btn::after {
+    content: "\25BC";
+    font-size: 0.8rem;
+    display: inline-block;
+    position: absolute;
+    right: 6%;
+    left: auto;
+}
+
+footer .foot_box .foot_right .fam_box .fam_btn.click::after {
+    content: "\25B2";
+    font-size: 0.8rem;
+    display: inline-block;
+    position: absolute;
+    right: 6%;
+    left: auto;
+}
+
+footer .foot_box .foot_right .fam_box ul {
+    padding: 5% 6%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: auto;
+    background-color: #222;
+    font-size: 0.9rem;
+    z-index: 3;
+}
+
+footer .foot_box .foot_right .fam_box ul li {
+    padding: 1% 0;
+}
+
+footer .foot_box .foot_right .foot_sns {
+    width: 12%;
+    margin: 4% 0%;
+    padding: 3% 0;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+
+footer .foot_box .btn_shop {
+    width: 250px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1% 0;
+    border-bottom: 3px solid #fff;
+    position: relative;
+}
+
+footer .foot_box .btn_shop a::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: url(img/btn_hover.png) no-repeat center center;
+    left: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .copy {
+    padding: 1% 2%;
+    font-weight: 400;
+    color: #999;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .top_btn {
+    width: 50px;
+    height: 50px;
+    color: #999;
+    position: absolute;
+    top: 10%;
+    left: auto;
+    right: 5%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+footer .top_btn::before {
+    content: "\2191";
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+footer .top_btn:hover::before {
+    color: #fff;
+    transition: all 0.5s;
 }
